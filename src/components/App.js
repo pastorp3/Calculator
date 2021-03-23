@@ -1,12 +1,12 @@
 import './App.css';
 import Display from './Display/Display';
-import Button from './Button/Button';
+import ButtonPanel from './ButtonPanel/ButtonPanel';
 
 function App() {
   return (
     <div>
       <Display />
-      <Button name="1" />
+      <ButtonPanel />
     </div>
   );
 }
