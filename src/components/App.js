@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import Display from './Display/Display';
 import ButtonPanel from './ButtonPanel/ButtonPanel';
+import calculate from '../logic/calculate';
 
 function App() {
   return (
@@ -12,3 +14,5 @@ function App() {
 }
 
 export default App;
+
+/* eslint-disable no-unused-vars */
