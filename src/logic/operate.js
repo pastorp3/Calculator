@@ -4,12 +4,12 @@ const operate = (nOne, nTwo, operation) => {
   let total = null;
   const n1 = Big(nOne);
   const n2 = Big(nTwo);
-  if (operation === '-') total = n1 - n2;
-  else if (operation === '+') total = n1 + n2;
-  else if (operation === 'X') total = n1 * n2;
+  if (operation === '-') total = n1.minus(n2);
+  else if (operation === '+') total = n1.plus(n2);
+  else if (operation === 'X') total = n1.times(n2);
   else if (operation === '÷') {
     if (n2 === '0') total = 'Cant divide by 0';
-    else total = n1 / n2;
+    else total = n1.div(n2);
   }
 
   return total;
