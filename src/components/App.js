@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import Display from './Display/Display';
 import ButtonPanel from './ButtonPanel/ButtonPanel';
@@ -13,3 +14,5 @@ function App() {
 }
 
 export default App;
+
+/* eslint-disable no-unused-vars */
