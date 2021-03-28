@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-vars, class-methods-use-this */
+/* eslint-disable no-unused-vars, class-methods-use-this,  react/destructuring-assignment */
 import './App.css';
 import React from 'react';
 import Display from './Display/Display';
@@ -20,14 +20,13 @@ class App extends React.Component {
 
   handleClick(btnName) {
     const { total, next, operator } = this.state;
-    console.log(total, next, operator);
-    console.log(btnName);
+    this.setState(state => calculate(state, btnName));
   }
 
   render() {
     return (
       <div>
-        <Display />
+        <Display onInput={this.state.next ? this.state.next : this.state.total} />
         <ButtonPanel clickHandler={() => this.handleClick} />
       </div>
     );

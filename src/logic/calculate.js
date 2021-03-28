@@ -1,30 +1,45 @@
 import operate from './operate';
 
 const calculate = (data, btnName) => {
-  let total = null;
-  let next = null;
-  const operation = null;
+  let { total, next, operator } = data;
 
-  const op = ['X', '+', '-', '÷'];
+  const op = ['X', '+', '-', '÷', '='];
+  const num = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
-  if (operation === '+/-') {
+  if (btnName === '+/-') {
     total *= -1;
     next *= -1;
-  } else if (operation === 'AC') {
+  } else if (btnName === 'AC') {
     total = null;
     next = null;
-    operate = null;
-  } else if (operation === '%') {
-    total /= 100;
-    next /= 100;
-  } else if (operation === '.') {
+    operator = null;
+  } else if (btnName === '%') {
+    total = String(total / 100);
+    next = String(next / 100);
+  } else if (btnName === '.') {
     total += '.';
     next += '.';
   }
 
-  if (op.includes(btnName)) total = operate(total, next, btnName);
+  if (op.includes(btnName)) {
+    if (operator != null) {
+      total = String(operate(total, next, operator));
+      next = null;
+    } else if (next != null) {
+      total = next;
+      next = null;
+    }
 
-  return total;
+    if (btnName !== '=') operator = btnName;
+    else operator = null;
+  }
+
+  if (num.includes(btnName)) {
+    if (next != null) next += btnName;
+    else next = btnName;
+  }
+
+  return { total, next, operator };
 };
 
 export default calculate;
