@@ -17,8 +17,9 @@ const calculate = (data, btnName) => {
     total = String(total / 100);
     next = String(next / 100);
   } else if (btnName === '.') {
-    total += '.';
-    next += '.';
+    if (!next.includes('.')) {
+      next += '.';
+    }
   }
 
   if (op.includes(btnName)) {
