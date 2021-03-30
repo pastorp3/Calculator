@@ -1,15 +1,23 @@
 import PropTypes from 'prop-types';
+import './Button.css';
 
-const Button = ({ name, click }) => <button type="button" onClick={() => click(name)}>{name}</button>;
+const Button = ({
+  name,
+  click,
+  color,
+  wide,
+}) => <button className={`${color} ${wide}`} type="button" onClick={() => click(name)}>{name}</button>;
 
 Button.defaultProps = {
-  name: null,
-  click: null,
+  color: 'btn-style-def',
+  wide: 'btn',
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
-  click: PropTypes.func,
+  name: PropTypes.string.isRequired,
+  click: PropTypes.func.isRequired,
+  color: PropTypes.string,
+  wide: PropTypes.string,
 };
 
 export default Button;

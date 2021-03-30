@@ -1,0 +1,23 @@
+.btn {
+    width: 25%;
+}
+
+.btn-0 {
+    width: 50%;
+}
+
+.btn-style-def {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    border: 1px solid gainsboro;
+    background-color: orange;
+}
+
+.btn-style {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    border: 1px solid gainsboro;
+    background-color: ghostwhite;
+}

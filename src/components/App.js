@@ -14,7 +14,7 @@ const App = () => {
 
   const { total, next } = state;
   return (
-    <div>
+    <div className="calculator">
       <Display onInput={next !== null ? next : total} />
       <ButtonPanel clickHandler={() => handleClick} />
     </div>

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import './Display.css';
 
-const Display = ({ onInput }) => <div><span>{onInput}</span></div>;
+const Display = ({ onInput }) => <div className="display"><span>{onInput}</span></div>;
 
 Display.propTypes = {
   onInput: PropTypes.string,
