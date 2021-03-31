@@ -1,37 +1,38 @@
 /* eslint-disable  arrow-body-style */
 import PropTypes from 'prop-types';
 import Button from '../Button/Button';
+import './ButtonPanel.css';
 
 const ButtonPanel = ({ clickHandler }) => {
   return (
-    <div>
-      <div>
-        <Button name="AC" click={clickHandler('AC')} />
-        <Button name="+/-" click={clickHandler('+/-')} />
-        <Button name="%" click={clickHandler('%')} />
+    <div className="panel">
+      <div className="row">
+        <Button name="AC" color="btn-style" click={clickHandler('AC')} />
+        <Button name="+/-" color="btn-style" click={clickHandler('+/-')} />
+        <Button name="%" color="btn-style" click={clickHandler('%')} />
         <Button name="÷" click={clickHandler('÷')} />
       </div>
-      <div>
-        <Button name="7" click={clickHandler('7')} />
-        <Button name="8" click={clickHandler('8')} />
-        <Button name="9" click={clickHandler('9')} />
+      <div className="row">
+        <Button name="7" color="btn-style" click={clickHandler('7')} />
+        <Button name="8" color="btn-style" click={clickHandler('8')} />
+        <Button name="9" color="btn-style" click={clickHandler('9')} />
         <Button name="X" click={clickHandler('X')} />
       </div>
-      <div>
-        <Button name="4" click={clickHandler('4')} />
-        <Button name="5" click={clickHandler('5')} />
-        <Button name="6" click={clickHandler('6')} />
+      <div className="row">
+        <Button name="4" color="btn-style" click={clickHandler('4')} />
+        <Button name="5" color="btn-style" click={clickHandler('5')} />
+        <Button name="6" color="btn-style" click={clickHandler('6')} />
         <Button name="-" click={clickHandler('-')} />
       </div>
-      <div>
-        <Button name="1" click={clickHandler('1')} />
-        <Button name="2" click={clickHandler('2')} />
-        <Button name="3" click={clickHandler('3')} />
+      <div className="row">
+        <Button name="1" color="btn-style" click={clickHandler('1')} />
+        <Button name="2" color="btn-style" click={clickHandler('2')} />
+        <Button name="3" color="btn-style" click={clickHandler('3')} />
         <Button name="+" click={clickHandler('+')} />
       </div>
-      <div>
-        <Button name="0" click={clickHandler('0')} />
-        <Button name="." click={clickHandler('.')} />
+      <div className="row">
+        <Button name="0" color="btn-style" wide="btn-0" click={clickHandler('0')} />
+        <Button name="." color="btn-style" click={clickHandler('.')} />
         <Button name="=" click={clickHandler('=')} />
       </div>
     </div>
