@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Display from './Display/Display';
 import ButtonPanel from './ButtonPanel/ButtonPanel';
 import calculate from '../logic/calculate';
+import Navbar from './Navbar';
 
 const App = () => {
   const [state, setState] = useState({ total: null, next: null, operator: null });
@@ -14,10 +15,16 @@ const App = () => {
 
   const { total, next } = state;
   return (
-    <div className="calculator">
-      <Display onInput={next !== null ? next : total} />
-      <ButtonPanel clickHandler={() => handleClick} />
-    </div>
+    <main>
+      <Navbar />
+      <div className="container">
+        <h3>Let’s do some math!</h3>
+        <div className="calculator">
+          <Display onInput={next !== null ? next : total} />
+          <ButtonPanel clickHandler={() => handleClick} />
+        </div>
+      </div>
+    </main>
   );
 };
 
