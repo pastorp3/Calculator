@@ -1,9 +1,9 @@
 .panle {
-    display: flex;
+  display: flex;
 }
 
 .row {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
 }
