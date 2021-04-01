@@ -152,7 +152,7 @@ describe('Test Add operation with +', () => {
       total: '9',
       next: null,
       operator: null,
-    }); 
+    });
   });
 
   it('Add a float number to a positive number', () => {
