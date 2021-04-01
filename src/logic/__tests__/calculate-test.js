@@ -10,8 +10,8 @@ describe('Change number to negative or positive with +/- ', () => {
       total: -0,
       next: -1,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Change number to positive', () => {
     expect(calculate({
@@ -22,8 +22,8 @@ describe('Change number to negative or positive with +/- ', () => {
       total: -0,
       next: 1,
       operator: null,
-    })
-  })
+    });
+  });
 });
 
 describe('Clear calculatoe with AC', () => {
@@ -36,9 +36,9 @@ describe('Clear calculatoe with AC', () => {
       total: null,
       next: null,
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Change values to percentage with %', () => {
   it('Change numbers to percentage', () => {
@@ -50,9 +50,9 @@ describe('Change values to percentage with %', () => {
       total: '0.1',
       next: '0.01',
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Change current value from integer to float with .', () => {
   it('Add . to number', () => {
@@ -64,9 +64,9 @@ describe('Change current value from integer to float with .', () => {
       total: null,
       next: '12.',
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Test Subtract operation with -', () => {
   it('Subtract two positive numbers', () => {
@@ -78,8 +78,8 @@ describe('Test Subtract operation with -', () => {
       total: '9',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Subtract a negtaive number to a positive number', () => {
     expect(calculate({
@@ -90,8 +90,8 @@ describe('Test Subtract operation with -', () => {
       total: '11',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Subtract a positive number to a negative number', () => {
     expect(calculate({
@@ -102,8 +102,8 @@ describe('Test Subtract operation with -', () => {
       total: '-11',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Subtract a negtaive number to a negative numebr', () => {
     expect(calculate({
@@ -114,8 +114,8 @@ describe('Test Subtract operation with -', () => {
       total: '-9',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Subtract a float number to a positive number', () => {
     expect(calculate({
@@ -126,9 +126,9 @@ describe('Test Subtract operation with -', () => {
       total: '8.5',
       next: null,
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Test Add operation with +', () => {
   it('Add to positive numbers', () => {
@@ -140,8 +140,8 @@ describe('Test Add operation with +', () => {
       total: '11',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Add a negative number to a positive number', () => {
     expect(calculate({
@@ -152,8 +152,8 @@ describe('Test Add operation with +', () => {
       total: '9',
       next: null,
       operator: null,
-    })  
-  })
+    }); 
+  });
 
   it('Add a float number to a positive number', () => {
     expect(calculate({
@@ -164,9 +164,9 @@ describe('Test Add operation with +', () => {
       total: '11.5',
       next: null,
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Test Multipy operation with X', () => {
   it('Multiply two positive numbers', () => {
@@ -178,8 +178,8 @@ describe('Test Multipy operation with X', () => {
       total: '20',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Multiply a negtaive number with a positive number', () => {
     expect(calculate({
@@ -190,8 +190,8 @@ describe('Test Multipy operation with X', () => {
       total: '-20',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Multiply a float number with whole number', () => {
     expect(calculate({
@@ -202,9 +202,9 @@ describe('Test Multipy operation with X', () => {
       total: '15',
       next: null,
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
 
 describe('Test Devide operation with ÷', () => {
   it('Devide two positive numbers', () => {
@@ -216,8 +216,8 @@ describe('Test Devide operation with ÷', () => {
       total: '5',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Devide two negative numbers', () => {
     expect(calculate({
@@ -228,8 +228,8 @@ describe('Test Devide operation with ÷', () => {
       total: '5',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Devide a negative number with a positive number', () => {
     expect(calculate({
@@ -240,8 +240,8 @@ describe('Test Devide operation with ÷', () => {
       total: '-5',
       next: null,
       operator: null,
-    })
-  })
+    });
+  });
 
   it('Devide a number with zero and show error', () => {
     expect(calculate({
@@ -252,6 +252,6 @@ describe('Test Devide operation with ÷', () => {
       total: 'Cant divide by 0',
       next: null,
       operator: null,
-    })
-  })
-})
+    });
+  });
+});
