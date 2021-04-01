@@ -9,8 +9,8 @@ import Navbar from './Navbar';
 const App = () => {
   const [state, setState] = useState({ total: null, next: null, operator: null });
 
-  const handleClick = btnName => {
-    setState(state => calculate(state, btnName));
+  const handleClick = (btnName) => {
+    setState((state) => calculate(state, btnName));
   };
 
   const { total, next } = state;
