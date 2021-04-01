@@ -3,7 +3,7 @@
 
 # React Calculator
  
- ![screenshot](./images/react-calculator.png)
+
 
 This a Calculator project made it with react and integrated on Math Magicians page.
 
@@ -49,7 +49,7 @@ Once you already install the project and all of the dependencies
 
 Then click a to start all of the tests
 
-![screenshot](./images/test-calculator.png)
+
 
 
 ## Authors
