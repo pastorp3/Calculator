@@ -1,10 +1,12 @@
 
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # React Calculator
  
+ ![screenshot](./images/react-calculator.png)
 
-Additional description about the project and its features.
+This a Calculator project made it with react and integrated on Math Magicians page.
 
 ## Built With
 
@@ -42,9 +44,13 @@ Run the app on the browser:
 > npm start
 
 ### Run tests
+Once you already install the project and all of the dependencies
 
-### Deployment
+> npm test
 
+Then click a to start all of the tests
+
+![screenshot](./images/test-calculator.png)
 
 
 ## Authors
@@ -76,4 +82,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
-
